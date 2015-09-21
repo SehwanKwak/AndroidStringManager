@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 import re
 import os
@@ -86,3 +86,4 @@ result_file.write(result)
 result_file.close()
 
 print("Output File : " + OUTPUT_FILENAME)
+

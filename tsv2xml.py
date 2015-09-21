@@ -151,6 +151,8 @@ for i in language_dirs:
         lang = i[i.find('-') + 1:]
         if lang == 'values':
             lang = 'default'
-        sys.stdout.write(" " + "'" + lang + "', ")
-        save_xml(file_path, load_languages.index(lang), lang)
+        if lang in load_languages:
+            sys.stdout.write(" " + "'" + lang + "', ")
+            save_xml(file_path, load_languages.index(lang), lang)
 print
+
